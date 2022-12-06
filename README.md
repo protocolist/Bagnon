@@ -8,3 +8,7 @@
 Bagnon is the most popular replacement of the World of Warcraft bag interface, designed to help the player find items as quickly and easily as possible.
 
 It organizes all bags into a single window, highlights important items and helps you find them using a search engine. It supports the inventory, bank, void storage and guild bank, which can be viewed at any time, from anywhere and from any character.
+
+This repo contains the latest version of Bagnon as published on CurseForge.
+
+Note that the Sushi and Poncho libraries used by Bagnon are GPL licensed.
