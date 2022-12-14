@@ -28,6 +28,11 @@ Item.BagFamilies = {
  	[0x10000] = 'fridge'
 }
 
+Item.Backgrounds = {
+	LAYOUT_STYLE_MODERN and 'item/weapon/1_null',
+	'interface/paperdoll/ui-backpack-emptyslot'
+}
+
 
 --[[ Construct ]]--
 
@@ -199,7 +204,7 @@ function Item:Update()
 	self:UpdateCooldown()
 	self:UpdateBorder()
 
-	SetItemButtonTexture(self, self.info.icon or (Addon.sets.emptySlots and 'Interface/PaperDoll/UI-Backpack-EmptySlot'))
+	SetItemButtonTexture(self, self.info.icon or self.Backgrounds[Addon.sets.slotBackground])
 	SetItemButtonCount(self, self.info.count)
 end
 
